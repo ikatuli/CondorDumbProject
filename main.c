@@ -1,3 +1,4 @@
+#include <stdlib.h> 
 #include <gmp.h>
 
 char * luk (unsigned int number) //Тест Люка-Лемера
@@ -45,12 +46,16 @@ int prime(unsigned int n) //Проверка на простоту
 int main(int argc , char **argv[])
 {
 	char * response = "0";
-	unsigned int n=0, l=0;
-	while (n<argv[0]) {
+	unsigned int n=0, l=2;
+
+	//printf("%s", luk (7));
+	while (n<atoi(argv[1])) {
 	if (prime(l) == 1) {
 	   	response = luk (l);
+		if (response != "0"){
 		printf("%s\n",response);
 		n+=1;
+		}
 	}
 	l+=1;
 	}
