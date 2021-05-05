@@ -1,0 +1,8 @@
+executable              = server
+arguments               = "10"
+log                     = server.log
+output                  = outfile.txt
+error                   = errors.txt
+should_transfer_files   = Yes
+when_to_transfer_output = ON_EXIT
+queue
