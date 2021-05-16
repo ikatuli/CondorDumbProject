@@ -46,19 +46,13 @@ int prime(unsigned int n) //Проверка на простоту
 int main(int argc , char **argv[])
 {
 	char * response = "0";
-	unsigned int n=0, l=2;
+	unsigned int n=atoi(argv[1]);
 
-	//printf("%s", luk (7));
-	while (n<atoi(argv[1])) {
-	if (prime(l) == 1) {
-	   	response = luk (l);
+	if (prime(n) == 1) {
+	   	response = luk (n);
 		if (response != "0"){
 		printf("%s\n",response);
-		n+=1;
 		}
 	}
-	l+=1;
-	}
-
 }
 

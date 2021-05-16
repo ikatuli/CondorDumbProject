@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.18)
+cmake_minimum_required(VERSION 3.12.3)
 project(Server LANGUAGES C)
 include_directories(${PROJECT_SOURCE_DIR})
 add_executable(server main.c)
