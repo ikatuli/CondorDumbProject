@@ -1,5 +1,7 @@
 #include <stdlib.h> 
+#include <stdio.h>
 #include <gmp.h>
+#include <math.h>
 
 char * luk (unsigned int number) //Тест Люка-Лемера
 {
